@@ -31,8 +31,48 @@
       crossorigin="anonymous"
     ></script>
     <script src="main.js"></script>
+
     <link rel="stylesheet" href="style.css" />
+
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="new-game">
+        <i class="bi bi-plus-circle text-danger mr-3 h5"></i>
+        <p>NEW GAME</p>
+      </div>
+
+      <div class="main-sections">
+        <!-- PLAYER 1 -->
+        <section
+          class="player-1 active-bg d-flex flex-column align-items-center"
+        >
+          <h1 id="one">
+            PLAYER 1
+            <div class="active"></div>
+          </h1>
+
+          <h2 class="score">0</h2>
+
+          <div class="current-score">
+            <p>CURRENT</p>
+            <h4 class="text-white">0</h4>
+          </div>
+        </section>
+
+        <!-- PLAYER 2 -->
+        <section class="player-2 d-flex flex-column align-items-center">
+          <h1 id="two">PLAYER 2</h1>
+
+          <h2 class="score">0</h2>
+
+          <div class="current-score">
+            <p>CURRENT</p>
+            <h4 class="text-white">0</h4>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

@@ -1,1 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/* GENERAL */
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+:root {
+  --grey: #f1f1f1;
+  --light-red: #df7171;
+  --active-grey: #eee;
+}
+
+.active {
+  background-color: var(--light-red);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 0.5em;
+}
+
+.active-bg {
+  background-color: var(--active-grey);
+}
+
+/* MAIN */
+main {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.new-game {
+  position: absolute;
+  left: 45%;
+  padding: 2em 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.main-sections {
+  display: flex;
+}
+
+.player-1,
+.player-2 {
+  width: 50%;
+  height: 100vh;
+  padding: 7em;
+}
+
+.player-1 > #one {
+  display: flex;
+  align-items: center;
+}
+
+h2.score {
+  font-weight: 300;
+  font-size: 5rem;
+  margin-top: 0.2em;
+}
+
+.current-score {
+  background-color: var(--light-red);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.3em 1.5em;
+  position: absolute;
+  top: 75%;
+}
+
+.current-score > p {
+  font-size: 0.8rem;
+}
